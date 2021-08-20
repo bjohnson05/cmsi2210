@@ -1,0 +1,32 @@
+; fib.tasm
+;  program to print the first 10 Fibonacci numbers
+;     in class assignment week 6 number 1
+
+            JMP      top         ; jump over data area
+number1:    0                    ; declare & initialize first number
+number2:    1                    ; declare & initialize second number
+current:    0                    ; declare current location
+limit:      10                   ; declare & initialize stopping point
+count:      0                    ; declare & initialize counter
+
+top:        LOAD     number1     ; put number1 in accumulator
+            WRITE    255         ; output the value to port 255
+            LOAD     number2     ; put number2 in accumulator
+            WRITE    255         ; output the value to port 255
+
+start:      LOAD     number1     ; put number1 in accumulator
+            ADD      number2     ; add number2 to it
+            WRITE    255         ; output the value to port 255
+            STORE    current     ; put accumulator into current
+            LOAD     number2     ; put number2 into accumulator
+            STORE    number1     ; store that into number1
+            LOAD     current     ; put current into accumulator
+            STORE    number2     ; store that into number2
+            LOAD     count       ; load the count
+            ADD      1           ; increment it
+            STORE    count       ; save it for next time
+            SUB      limit       ; substract it from limit
+            JLZ      start       ; if not yet past limit, go again
+
+end:        JMP      end         ; this "stops" the program
+

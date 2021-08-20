@@ -1,0 +1,25 @@
+; hi888.stanley
+;  program to print Hello, world to port 888
+;     using UTF-32 encoding
+;     in class assignment week 6 number 2
+
+            JMP      start                ; jump over data area
+message:    00000048 00000065 0000006C 0000006C
+            0000006F 0000002C 00000020 00000077
+            0000006F 00000072 0000006C 00000064
+current:    0                             ; address of current word [letter] of message
+length:     12                            ; length of message in UTF-32 letters
+count:      0                             ; declare and initialize output counter
+start:      LOAD     message[current]     ; load first four bytes of message
+            WRITE    888                  ; output them
+            LOAD     current              ; get current letter address
+            ADD      4                    ; add 4 to get to next letter
+            STORE    current              ; store it back
+            LOAD     count                ; load the counter
+            ADD      1                    ; increment it
+            STORE    count                ; save it back
+            SUB      length               ; subtract length from it
+            JLZ      start                ; if negative, not done, go again
+
+end         JMP      end                  ; stops the program
+
