@@ -1,0 +1,51 @@
+
+
+Evaluation Criteria ~ homework05
+CMSI 2210 Section 01 Fall 2021
+=================================
+
+dec2bin
+   compiles       [ 5 pts.]      5 points earned
+   error checks   [ 5 pts.]
+   runs  tests    [10 pts.]
+dec2hex
+   compiles       [ 5 pts.]
+   error checks   [ 5 pts.]
+   32-bit tests   [ 5 pts.]
+   64-bit tests   [ 5 pts.]
+timesTables
+   compiles       [ 5 pts.]
+   error checks   [ 5 pts.]
+   runs  tests    [10 pts.]
+holdit
+   compiles       [ 5 pts.]
+   runs tests     [15 pts.]
+wordcount
+   compiles       [ 5 pts.]
+   error checks   [ 5 pts.]
+   runs tests     [10 pts.]
+
+ Total possible ~ 100 points
+
+========================================================
+
+TOTAL EARNED POINTS:
+   you earned 100/100 which is 90.00% which is an A-plus
+
+========================================================
+SPECIFIC COMMENTS/FEEDBACK:
+
+
+
+========================================================
+SEMESTER SCORE SO FAR:
+
+   homework01 ~ 100.00% of  5 points =  5.00 points
+   homework02 ~ 100.00% of  5 points =  5.00 points
+   homework03 ~ 100.00% of  5 points =  5.00 points
+   homework04 ~ 100.00% of  5 points =  5.00 points
+   homework05 ~ 100.00% of 10 points = 10.00 points
+                                total: 30.00 out of 30.00 = 100.00%
+                                which is an A-plus
+
+Your code looks VERY nice, you two obviously care about the craft....
