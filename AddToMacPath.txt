@@ -1,0 +1,52 @@
+
+Adding a directory to the Mac O/S search path
+=============================================
+1.  Determine the directory in which the program you are adding 'resides'
+2.  Open a terminal window and type the name of the program.  If you DON'T
+      get a response saying
+         ""
+      the program is already in the search path.  You're done.
+3.  type "cd" and press "enter".  This will return you to your "normal"
+      working directory [also called your 'home' directory] in the terminal
+      window.
+4.  type "echo $SHELL" and press "enter".  This will tell you which "shell"
+      you are using.  Things are case-sensitive so be aware.  It matters what
+      shell you are using as to which file you create/edit next.
+5.  type "ls -al" and press "enter".  This will show you all the files in
+      your home directory in 'long' format.  Because of the "-a" you will be
+      able to see files beginning with a dot ["."]
+6.  look for a file called either ".bash_profile" or ".zprofile" in the list,
+      depending upon if you are running the bash or z shell, respectively.
+      If it doesn't exist you will need to create one and add the search path
+      to it using these steps.  If it DOES exist, skip to step 9.
+7.  if the last command responded with "/bin/bash" you are on the bash shell;
+      if it responded with "/bin/zsh" you are on the "z" shell.  Note that it
+      is the last word that is important here....
+8.  type "touch .bash_profile" if you are on bash, or "touch .zprofile" if
+      you are on zsh.  This will create an empty file with the name you have
+      typed.
+9.  type "vi .bash_profile" or "vi .zprofile" to edit the file using the "vi"
+      editor.  If you have another editor you are familiar with using in the
+      terminal, feel free to use that one instead.  You will still need to
+      add the line in the next step.
+10. when the "vi" editor opens, press the "a" key to "append" [if this is a
+      new file] and type [or copy and paste] the following line into the vi
+      window:
+
+         PATH=$PATH:/usr/local/bin/nasm-2.15.05        # this will add 'nasm'
+
+      then press the "escape" key to exit "append" mode.  NOTE: the path you
+      added should be the directory where your program is installed, that you
+      determined in step 1.
+11. press the "colon" key [":"] and observe that the colon character appears
+      at the BOTTOM LEFT MARGIN of the window.
+12. type "wq" for "write and quit" to save the file.  The "vi" editor exits.
+13. type "ls -al" again to make sure the ".bash_profile" or ".zprofile" file
+      has a file size that is not zero.
+14. type "source ./.bash_profile" or "source ./.zprofile" to pick up the new
+      changes to your search path.  Use "echo $PATH" to see the entire path;
+      you should see your new added path in the results.
+15. type the name of the program that you are trying to add, like 'nasm' or
+      'gcc' and press "enter".  You should see the program's response.
+
+DONE!!!
