@@ -1,0 +1,28 @@
+
+Adding a directory to the Windows O/S search path
+=================================================
+1.  Determine the directory in which the program you are adding 'resides'
+2.  Open a command window and type the name of the program.  If you DON'T
+      get a response saying
+         "'blah' is not recognized as an internal or external command,
+            operable program or batch file."
+      the program is already in the search path.  You're done.
+
+3.  click on the windows "start" button and select the "gear" to get to the
+      configuration settings window.  Type "environ" in the search box, then
+      click on the "edit the system environment variables" link that pops up.
+4.  you'll get a window with a button marked "environment variables" near the
+      bottom.  Click that button and another window will open.
+5.  in that new window, click on the "path" variable then click the "edit"
+      button.  You'll get yet another window with all the search path entries
+      listed.
+6.  you should click "new" and then in the new box in the window type in the
+      file path from step one.  For example, on mine, I typed in the directory
+      "C:\Program Files\NASM" to add the 'nasm' assembler program to the path.
+7.  click "OK" to close the window, then "OK" to close each of the other
+      windows, then close the settings window.
+8.  open a NEW cmd prompt and type the name of the program you want to run,
+      then press "enter".  If all went well, you should see some prompt from
+      the desired program or applicaiont which indicates it is running.
+
+DONE!!!

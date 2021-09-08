@@ -25,8 +25,8 @@ Answers to the following questions can be found in the information on the course
 1. What is one difference between "Application software" and "System software"?
 1. Is the phrase cmp rdi, rsi machine language?
 1. How many buses are included in the system bus?
-1. What is the decimal value of 100101112?
-1. What is the decimal value of 111111112?
+1. What is the decimal value of 10010111<sub>2</sub>?
+1. What is the decimal value of 11111111<sub>2</sub>?
 1. What is the largest unsigned integer value that will fit into 16 bits? 
 
 ## Evaluation Criteria for Homework 02
