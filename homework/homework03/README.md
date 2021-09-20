@@ -59,7 +59,7 @@ Remember that the prefix "0x" or "0X" indicates that a value is shown in hexadec
   - -5.125 X 290 as a 32-bit float, in hex is:
   - 96.03125 as a 32-bit float, in hex is:
   - 2<sup>-138</sup> as a 32-bit float, in hex is:
-  - 1.5 X 2-143 as a 32-bit float, in hex is:
+  - 1.5 X 2<sup>-143</sup> as a 32-bit float, in hex is:
   - -16777216 as a 32-bit float, in hex is:
   - 0x43700000, when iterpreted as an IEEE-754 pattern, is in decimal:
   - 0xC0FF0000, when iterpreted as an IEEE-754 pattern, is in decimal:
