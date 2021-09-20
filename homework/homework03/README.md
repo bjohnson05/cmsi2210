@@ -47,7 +47,7 @@ Remember that the prefix "0x" or "0X" indicates that a value is shown in hexadec
   - The modular sum of 16-bit hex values 0xEEEE + 0xC00C is:
   - The saturated sum of 16-bit hex values 0xEEEE + 0xC00C is:
   - The 16-bit operation 0x9EEE + 0xAB0C has a carry (Y or N):
-  - The 16-bit operation 0x9EEE + 0xAB0C has a overflows (Y or N):
+  - The 16-bit operation 0x9EEE + 0xAB0C has an overflow (Y or N):
   - The negation of 16-bit word 0xB00F is:
   - The negation of 16-bit word 2232 is:
   - The negation of 16-bit word 0x8000 is:
@@ -58,7 +58,7 @@ Remember that the prefix "0x" or "0X" indicates that a value is shown in hexadec
   - The smallest nonzero positive IEEE-754 single precision float, in hex is:
   - -5.125 X 290 as a 32-bit float, in hex is:
   - 96.03125 as a 32-bit float, in hex is:
-  - 2-138 as a 32-bit float, in hex is:
+  - 2<sup>-138</sup> as a 32-bit float, in hex is:
   - 1.5 X 2-143 as a 32-bit float, in hex is:
   - -16777216 as a 32-bit float, in hex is:
   - 0x43700000, when iterpreted as an IEEE-754 pattern, is in decimal:
