@@ -23,7 +23,7 @@ Total possible points 10
 ========================================================
 
 TOTAL EARNED POINTS:
-   you earned 10/10 which is 100% which is an A-plus
+   you earned 10/10 which is 100.0% which is an A-plus
 
 ========================================================
 SPECIFIC COMMENTS/FEEDBACK:
