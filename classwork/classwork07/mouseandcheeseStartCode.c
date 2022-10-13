@@ -99,9 +99,15 @@ int main() {
    index = (rand() % WORD_COUNT);
 
   /*
-   * Initialize the mask array
-   *    mask[i] is true if the character s[i] has been guessed.
-   * The mask must be allocated, and initialized to all false
+   * Initialize the 'mask' array
+   *   The purpose of the mask array is to provide a way to check and
+   *   track correct letter guesses:
+   *     mask[i] is true if the character s[i] has been guessed.
+   * The mask array must be allocated to have one slot per letter in the
+   *   word being guessed.  Since the word is selected at random, the
+   *   array must be allocated dynamically so it is the same length as
+   *   the number of letters in the word each time, then initialized to 
+   *   all false using a loop.
    */
 
   /*
