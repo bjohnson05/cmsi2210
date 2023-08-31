@@ -9,6 +9,6 @@
 
  int main( int c, char * argv[] ) {
 
-    printf( "Hello, world!" );
+    printf( "\n\n    Hello, world!\n\n" );
 
  }
