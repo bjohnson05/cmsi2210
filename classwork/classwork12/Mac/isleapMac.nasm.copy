@@ -1,0 +1,57 @@
+;----------------------------------------------------------------------------
+; isleap.nasm
+;
+; This is a MacOS console progam that determines if a year is a leap year or
+;  not.  If it is, it outputs a yes message, and if not it outputs a no.
+; For purposes of he in-class exercise, the year will be hard-coded as 1920.
+; The program needs to be linked with a C library to use "printf()"
+; The process is mod by 4, then by 100, then by 400
+;     return ((((y % 4 == 0) && (y % 100 != 0)) || Y % 400 == 0));
+;
+;  to assemble for mac: nasm -f macho64 isleap.nasm
+;  to link for mac:     gcc  isleap.o -o isleap
+;----------------------------------------------------------------------------
+
+            global   _main
+            extern   _printf
+            default  rel
+
+            section  .text
+_main:
+            push     rbx            ; we have to save this
+
+            xor      r12, r12       ; zero out rax
+            mov      r12, 1920      ; r12 is the year to investigate
+            and      r12, 0x3       ; remainder of div by 4 using AND
+;            jg       printno        ; NOPE!
+;            mov      r12, 1920      ; reload year
+;            and      r12, 0x63      ; remainder of div by 100 using AND
+;            jnz      printyes       ; YUP!
+;            mov      r12, 1920      ; reload for last check
+;            and      r12, 0x18F     ; remainder of div by 400 using AND
+;            jz       printyes       ; YEP!
+;            jmp      printno        ; default case, just IN case
+;
+;printno:    push     r12
+;            lea      rdi, [noout]
+;            call     _printf
+;            add      rsp, 4
+
+;            pop      rbp            ; restore rbp before returning
+;            ret
+
+printyes:   mov      rsi, r12
+            push     rsi
+            lea      rdi, [yesout]
+            call     _printf
+
+            pop      rbx
+            ret
+
+            segment  .data
+year:       dw       1920
+yesout:     db       '1920 is a leap year', 10, 0
+yeslen      equ      $-yesout
+noout:      db       '1920 is NOT a leap year', 10, 0
+nolen       equ      $-noout
+

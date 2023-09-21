@@ -2,6 +2,9 @@
 ; program to output the factors of 2 up to 1,000,000
 ; output goes to port 100
 ; copied from cmsi 2210 web pages
+; NOTE: the line numbers are just for show; they aren't
+;     part of the program, they are just there to make it
+;     easy to talk about the code
 
 0         JMP     start    ; begin by jumping over the data area
 1 pow:    1                ; store the current power value here

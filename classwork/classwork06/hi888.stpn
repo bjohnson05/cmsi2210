@@ -1,0 +1,26 @@
+; hi888.stanley
+;  program to print Hello, world to port 888
+;     using UTF-32 encoding
+;     in class assignment week 6 number 2
+
+ 0             JMP      start                ; jump over data area
+ 1 message:    00000048 00000065 0000006C 0000006C
+ 2             0000006F 0000002C 00000020 00000077
+ 3             0000006F 00000072 0000006C 00000064
+ 4 current:    0                             ; address of current word [letter] of message
+ 5 length:     12                            ; length of message in UTF-32 letters
+ 6 count:      0                             ; declare and initialize output counter
+ 7 start:      LOAD     message[current]     ; load first four bytes of message
+ 8             WRITE    888                  ; output them
+ 9             LOAD     current              ; get current letter address
+10             ADD      1                    ; add 1 to get to next letter
+11             STORE    current              ; store it back
+12             LOAD     count                ; load the counter
+13             ADD      1                    ; increment it
+14             STORE    count                ; save it back
+15             SUB      length               ; subtract length from it
+16             JLZ      start                ; if negative, not done, go again
+
+17 end         JMP      end                  ; stops the program
+
+;  how can we modify this code to optimize it?
