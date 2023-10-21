@@ -10,15 +10,12 @@
  */
 
 #include <stdio.h>
-#include <math.h>
 #include <stdlib.h>
 #include <time.h>
 
 // Not the best; should be a command line argument!
-#define NUMBER_OF_DARTS 1000000
-
-// Because my gcc is rilly RILLY old...
-#define M_PI 3.141592653589793
+#define NUMBER_OF_DARTS 100000
+#define M_PI 3.1415926535
 
 // Returns the 'c-squared' value of 'x' and 'y'
 double squareOfDistanceToOrigin( double x, double y ) {
@@ -36,14 +33,14 @@ int main() {
    int inside = 0;
    srand( time(0) );
 
-   for (i = 0; i < NUMBER_OF_DARTS; i++) {
+   for( i = 0; i < NUMBER_OF_DARTS; i++ ) {
       double x = randomValue();
       double y = randomValue();
-      if (squareOfDistanceToOrigin(x, y) < 1.0) {
+      if( squareOfDistanceToOrigin(x, y) < 1.0 ) {
          inside++;
       }
    }
-   printf( "Pi [est.]: %12.10f\n",
+   printf( "Pi [est.]: %12.10f\n", \
            4.0 * ((double)inside / NUMBER_OF_DARTS) );
    printf( "[actual to 10 digits is %12.10f)\n", M_PI );
 

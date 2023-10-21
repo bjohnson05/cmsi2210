@@ -109,8 +109,7 @@ int main() {
    *   the number of letters in the word each time, then initialized to 
    *   all false using a loop.
    */
-   int N = strlen( words[index] );
-   
+
   /*
    * Print the instructions
    */
