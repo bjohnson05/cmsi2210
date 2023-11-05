@@ -6,24 +6,24 @@ CMSI 2210 Section 01 Fall 2021
 
 dec2bin
    compiles       [ 5 pts.]      5 points earned
-   error checks   [ 5 pts.]
-   runs  tests    [10 pts.]
+   error checks   [ 5 pts.]      5 points earned
+   runs  tests    [10 pts.]     10 points earned
 dec2hex
-   compiles       [ 5 pts.]
-   error checks   [ 5 pts.]
-   32-bit tests   [ 5 pts.]
-   64-bit tests   [ 5 pts.]
+   compiles       [ 5 pts.]      5 points earned
+   error checks   [ 5 pts.]      5 points earned
+   32-bit tests   [ 5 pts.]      5 points earned
+   64-bit tests   [ 5 pts.]      5 points earned
 timesTables
-   compiles       [ 5 pts.]
-   error checks   [ 5 pts.]
-   runs  tests    [10 pts.]
+   compiles       [ 5 pts.]      5 points earned
+   error checks   [ 5 pts.]      5 points earned
+   runs  tests    [10 pts.]     10 points earned
 holdit
-   compiles       [ 5 pts.]
-   runs tests     [15 pts.]
+   compiles       [ 5 pts.]      5 points earned
+   runs tests     [15 pts.]     15 points earned
 wordcount
-   compiles       [ 5 pts.]
-   error checks   [ 5 pts.]
-   runs tests     [10 pts.]
+   compiles       [ 5 pts.]      5 points earned
+   error checks   [ 5 pts.]      5 points earned
+   runs tests     [10 pts.]     10 points earned
 
  Total possible ~ 100 points
 
