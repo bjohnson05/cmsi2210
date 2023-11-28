@@ -5,20 +5,19 @@ CMSI 2210 Section 01 Fall 2021
 =================================
 
 FINDGCD.NASM
-   assembles            [5 pts.]
-   runs                 [5 pts.]
-   output correct       [2 pts.]
+   nasm file assembles  [5 pts.]
+   nasm runs            [5 pts.]
+   output correct       [3 pts.]
 GCDFINDER
    nasm file assembles  [5 pts.]
    gcdFinder.c compiles [5 pts.]
-   link both files      [5 pts.]
+   link both files OK   [5 pts.]
    nasm returns value   [5 pts.]
-   output correct       [2 pts.]
+   output correct       [3 pts.]
 PARITYGEN
-   nasm assembles       [5 pts.]
-   nasm links           [5 pts.]
+   nasm file assembles  [5 pts.]
    nasm runs            [5 pts.]
-   output correct       [2 pts.]
+   output correct       [3 pts.]
 WHICHENDISUP
    compiles no errors   [5 pts.]
    runs no errors       [5 pts.]
@@ -27,12 +26,12 @@ MAKENBOC.C
    uses previous func.  [5 pts.]
    tester compiles      [5 pts.]
    tester runs          [5 pts.]
-   output correct       [2 pts.]
+   output correct       [3 pts.]
 MAKENBO.NASM
-   assembles            [5 pts.]
-   link both files      [5 pts.]
+   nasm file assembles  [5 pts.]
+   link all files OK    [5 pts.]
    calls "C" function   [5 pts.]
-   output correct       [2 pts.]
+   output correct       [3 pts.]
 
 Total possible points 100
 
