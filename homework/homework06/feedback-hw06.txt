@@ -1,7 +1,7 @@
 
 
 Evaluation Criteria ~ homework06
-CMSI 2210 Section 01 Fall 2021
+CMSI 2210 Section all Fall 2023
 =================================
 
 FINDGCD.NASM
