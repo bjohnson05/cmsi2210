@@ -1,0 +1,5 @@
+
+For the inputfile.txt file, there are 394 actual words.
+
+If you count the three returns for blank lines, that gives
+three more characters, so a word count of 397 is acceptable.

@@ -1,0 +1,13 @@
+     1                                  
+     2                                           global     _main                    ; declares the starting entry point
+     3                                           extern     _printf                  ; we'll use the "C" library for now
+     4                                  
+     5                                           section    .text                    ; code starts here
+     6 00000000 68[0E000000]            _main:   push       message                  ; put the message on the stack
+     7 00000005 E8(00000000)                     call       _printf                  ; call "printf()" to display it
+     8 0000000A 83C404                           add        esp, 4                   ; set up the exit
+     9 0000000D C3                               ret                                 ; return to Windows
+    10                                  
+    11 0000000E 0A0A20202048656C6C-     message: db  10, 10, 32, 32, 32, 'Hello, World', 10, 10, 0
+    11 00000017 6F2C20576F726C640A-
+    11 00000020 0A00               

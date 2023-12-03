@@ -1,0 +1,16 @@
+.                                                         
+###############################                           
+RUNNING TESTS FOR HOMEWORK06                              
+###############################                           
+.                                                         
+COMPILING/ASSEMBLING/LINKING                              
+...note that no output means all successful...            
+----------------------------------------------            
+.                                                         
+.                                                         
+RUNNING TESTS OF ALL PROGRAMS                             
+-------------------------------                           
+.                                                         
+Running tests of 'findGCD' nasm program                   
+test of findGCD nasm program with 24 and 18               
+result should be '6'                                      

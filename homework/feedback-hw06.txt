@@ -1,0 +1,62 @@
+
+
+Evaluation Criteria ~ homework06
+CMSI 2210 Section all Fall 2023
+=================================
+
+FINDGCD.NASM
+   nasm file assembles  [5 pts.]
+   nasm runs            [5 pts.]
+   output correct       [3 pts.]
+GCDFINDER
+   nasm file assembles  [5 pts.]
+   gcdFinder.c compiles [5 pts.]
+   link both files OK   [5 pts.]
+   nasm returns value   [5 pts.]
+   output correct       [3 pts.]
+PARITYGEN
+   nasm file assembles  [5 pts.]
+   nasm runs            [5 pts.]
+   output correct       [3 pts.]
+WHICHENDISUP
+   compiles no errors   [5 pts.]
+   runs no errors       [5 pts.]
+MAKENBOC.C
+   compiles no errors   [5 pts.]
+   uses previous func.  [5 pts.]
+   tester compiles      [5 pts.]
+   tester runs          [5 pts.]
+   output correct       [3 pts.]
+MAKENBO.NASM
+   nasm file assembles  [5 pts.]
+   link all files OK    [5 pts.]
+   calls "C" function   [5 pts.]
+   output correct       [3 pts.]
+
+Total possible points 100
+
+========================================================
+
+TOTAL EARNED POINTS:
+   you earned 100.00/100.00 which is 100% which is an A-plus
+
+========================================================
+SPECIFIC COMMENTS/FEEDBACK:
+
+
+
+
+
+========================================================
+SEMESTER HOMEWORK TOTALS:
+
+   homework01 ~ 100.00% of  5 points =  5.00 points
+   homework02 ~ 100.00% of  5 points =  5.00 points
+   homework03 ~ 100.00% of  5 points =  5.00 points
+   homework04 ~ 100.00% of  5 points =  5.00 points
+   homework05 ~ 100.00% of 10 points = 10.00 points
+   homework06 ~ 100.00% of 15 points = 15.00 points
+                       semester total: 45.00 out of 45.00 = 100.00%
+                             which is an A-plus
+
+Great work!

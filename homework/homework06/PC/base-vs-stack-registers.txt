@@ -1,0 +1,201 @@
+Starting program: D:\bjohnson\Academia2\Lmu_Data\Teaching\Teaching284\2021-Evals\01-code\homework\homework06\PC\gcdFinderTest.exe
+[New Thread 6600.0x7854]
+[New Thread 6600.0x6a40]
+
+
+  Enter first number: 123456
+  Enter second number: 98
+
+Thread 1 hit Breakpoint 1, main () at gcdFinderTest.c:24
+24         gcd = gcdFinder( x, y );
+(gdb) info registers
+eax            0x1      1
+ecx            0xf289af3        254319347
+edx            0x40405f 4210783
+ebx            0x17160c 1512972
+esp            0x61feb0 0x61feb0       <--
+ebp            0x61fed8 0x61fed8       <--
+esi            0x70     112
+edi            0x17162c 1513004
+eip            0x401626 0x401626 <main+102>
+eflags         0x202    [ IF ]
+cs             0x23     35
+ss             0x2b     43
+ds             0x2b     43
+es             0x2b     43
+fs             0x53     83
+gs             0x2b     43
+(gdb) stepi
+0x0040162a      24         gcd = gcdFinder( x, y );
+(gdb) info registers
+eax            0x1      1
+ecx            0xf289af3        254319347
+edx            0x62     98
+ebx            0x17160c 1512972
+esp            0x61feb0 0x61feb0       <--
+ebp            0x61fed8 0x61fed8       <--
+esi            0x70     112
+edi            0x17162c 1513004
+eip            0x40162a 0x40162a <main+106>
+eflags         0x202    [ IF ]
+cs             0x23     35
+ss             0x2b     43
+ds             0x2b     43
+es             0x2b     43
+fs             0x53     83
+gs             0x2b     43
+(gdb) stepi
+0x0040162e      24         gcd = gcdFinder( x, y );
+(gdb) info registers
+eax            0x1e240  123456
+ecx            0xf289af3        254319347
+edx            0x62     98
+ebx            0x17160c 1512972
+esp            0x61feb0 0x61feb0       <--
+ebp            0x61fed8 0x61fed8       <--
+esi            0x70     112
+edi            0x17162c 1513004
+eip            0x40162e 0x40162e <main+110>
+eflags         0x202    [ IF ]
+cs             0x23     35
+ss             0x2b     43
+ds             0x2b     43
+es             0x2b     43
+fs             0x53     83
+gs             0x2b     43
+(gdb) stepi
+0x00401632      24         gcd = gcdFinder( x, y );
+(gdb) info registers
+eax            0x1e240  123456
+ecx            0xf289af3        254319347
+edx            0x62     98
+ebx            0x17160c 1512972
+esp            0x61feb0 0x61feb0       <--
+ebp            0x61fed8 0x61fed8       <--
+esi            0x70     112
+edi            0x17162c 1513004
+eip            0x401632 0x401632 <main+114>
+eflags         0x202    [ IF ]
+cs             0x23     35
+ss             0x2b     43
+ds             0x2b     43
+es             0x2b     43
+fs             0x53     83
+gs             0x2b     43
+(gdb) stepi
+0x00401635      24         gcd = gcdFinder( x, y );
+(gdb) info registers
+eax            0x1e240  123456
+ecx            0xf289af3        254319347
+edx            0x62     98
+ebx            0x17160c 1512972
+esp            0x61feb0 0x61feb0       <--
+ebp            0x61fed8 0x61fed8       <--
+esi            0x70     112
+edi            0x17162c 1513004
+eip            0x401635 0x401635 <main+117>
+eflags         0x202    [ IF ]
+cs             0x23     35
+ss             0x2b     43
+ds             0x2b     43
+es             0x2b     43
+fs             0x53     83
+gs             0x2b     43
+(gdb) stepi
+0x00401660 in gcdFinder ()
+(gdb) info registers
+eax            0x1e240  123456
+ecx            0xf289af3        254319347
+edx            0x62     98
+ebx            0x17160c 1512972
+esp            0x61feac 0x61feac       <--
+ebp            0x61fed8 0x61fed8       <--
+esi            0x70     112
+edi            0x17162c 1513004
+eip            0x401660 0x401660 <gcdFinder>
+eflags         0x202    [ IF ]
+cs             0x23     35
+ss             0x2b     43
+ds             0x2b     43
+es             0x2b     43
+fs             0x53     83
+gs             0x2b     43
+(gdb) stepi
+0x00401661 in gcdFinder ()
+(gdb) info registers
+eax            0x1e240  123456
+ecx            0xf289af3        254319347
+edx            0x62     98
+ebx            0x17160c 1512972
+esp            0x61feac 0x61feac       <--
+ebp            0x61fed8 0x61fed8       <--
+esi            0x70     112
+edi            0x17162c 1513004
+eip            0x401661 0x401661 <gcdFinder+1>
+eflags         0x202    [ IF ]
+cs             0x23     35
+ss             0x2b     43
+ds             0x2b     43
+es             0x2b     43
+fs             0x53     83
+gs             0x2b     43
+(gdb) stepi
+[New Thread 6600.0x8acc]
+0x00401662 in gcdFinder ()
+(gdb) info registers
+eax            0x1e240  123456
+ecx            0xf289af3        254319347
+edx            0x62     98
+ebx            0x17160c 1512972
+esp            0x61feac 0x61feac       <--
+ebp            0x61fed8 0x61fed8       <--
+esi            0x70     112
+edi            0x17162c 1513004
+eip            0x401662 0x401662 <gcdFinder+2>
+eflags         0x202    [ IF ]
+cs             0x23     35
+ss             0x2b     43
+ds             0x2b     43
+es             0x2b     43
+fs             0x53     83
+gs             0x2b     43
+(gdb) stepi
+0x00401663 in gcdFinder ()
+(gdb) info registers
+eax            0x1e240  123456
+ecx            0xf289af3        254319347
+edx            0x62     98
+ebx            0x17160c 1512972
+esp            0x61fea8 0x61fea8       <--
+ebp            0x61fed8 0x61fed8       <--
+esi            0x70     112
+edi            0x17162c 1513004
+eip            0x401663 0x401663 <gcdFinder+3>
+eflags         0x202    [ IF ]
+cs             0x23     35
+ss             0x2b     43
+ds             0x2b     43
+es             0x2b     43
+fs             0x53     83
+gs             0x2b     43
+(gdb) stepi
+
+Thread 1 hit Breakpoint 2, 0x00401665 in getnums ()
+(gdb) info registers
+eax            0x1e240  123456
+ecx            0xf289af3        254319347
+edx            0x62     98
+ebx            0x17160c 1512972
+esp            0x61fea8 0x61fea8       <--
+ebp            0x61fea8 0x61fea8       <--
+esi            0x70     112
+edi            0x17162c 1513004
+eip            0x401665 0x401665 <getnums>
+eflags         0x202    [ IF ]
+cs             0x23     35
+ss             0x2b     43
+ds             0x2b     43
+es             0x2b     43
+fs             0x53     83
+gs             0x2b     43
+(

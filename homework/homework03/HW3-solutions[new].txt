@@ -1,0 +1,98 @@
+
+SOLUTIONS TO HOMEWORK #3 ~ CMSI 2210 FALL 2023
+================================================
+
+"C level" problems
+---------------------------------
+1  Hex FAC3 in binary is:                          1111101011000011
+2  Hex FAC3 as an unsigned decimal is:             64195
+3  Hex FAC3 as a signed decimal is:                -1341
+               [1111101011000011 2's comp => 0000010100111101]
+4  Hex 0064 in binary is:                          0000000001100100
+5  Hex 0064 as an unsigned decimal is:             100
+6  Hex 0064 as a signed decimal is:                100
+7  Hex 8000 in binary is:                          1000000000000000
+8  Hex 8000 as an unsigned decimal is:             32768
+9  Hex 8000 as a signed decimal is:                -32768
+
+10 Decimal 8000 encoded in 16-bits (unsigned) is in hex:       0001 1111 0100 0000 => 0x1F40
+11 Decimal 8000 encoded in 16-bits (signed) is in hex:         0001 1111 0100 0000 => 0x1F40
+12 Decimal -11 encoded in 16-bits (signed) is in hex:          0xFFF5
+13 Decimal -32717 encoded in 16-bits (signed) is in hex:       0x8033
+14 Binary 10111101 in hex is:                                  0xBD
+15 Binary 1011110100000001 as an unsigned decimal is:          48385
+16 Binary 1011110100000001 as a signed decimal is:             -17151
+17 If we had 20-bit registers, the smallest signed decimal value would be: -524288
+18 If we had 20-bit registers, the largest signed decimal value would be: 524287
+19 The modular sum of 16-bit hex values 3511 + 4FFC is:        0x850D
+20 The saturated sum of 16-bit hex values 3511 + 4FFC is:      0x850D
+21 The 16-bit operation 3511 + 4FFC has a carry (Y or N):      N  [850D fits within 16 bits]
+22 The 16-bit operation 3511 + 4FFC has an overflow (Y or N):  Y  [850D is negative, but it’s addition of 2 pos.]
+
+
+"B level" problems
+---------------------------------
+01 Work all "C level" problems and also the following problems:
+02 The modular sum of 16-bit hex values 6159 + F702 is:        0x585B
+03 The saturated sum of 16-bit hex values 6159 + F702 is:      0x585B  0xFFFF
+04 The 16-bit operation 6159 + F702 has a carry (Y or N): Y    Y
+05 The 16-bit operation 6159 + F702 has an overflow (Y or N):  Y   N
+06 The modular sum of 16-bit hex values EEEE + C00C is:        0xAEFA
+07 The saturated sum of 16-bit hex values EEEE + C00C is:      0xFFFF
+08 The 16-bit operation 9EEE + AB0C has a carry (Y or N):      Y
+09 The 16-bit operation 9EEE + AB0C has an overflow (Y or N):  Y
+10 The negation of 16-bit word B00F is:   1011 0000 0000 1111 => 0100 1111 1111 0001 [0x4FF1]
+11 The negation of 16-bit word 2232 is:   0010 0010 0011 0010 => 1101 1101 1100 1110 [0xDDCE]
+12 The negation of 16-bit word 8000 is:   1000 0000 0000 0000 => 1000 0000 0000 0000 [0x8000]
+13 The negation of 32-bit word FFF329BA is:  1111 1111 1111 0011 0010 1001 1011 1010 =>
+                                           0000 0000 0000 1100 1101 0110 0100 0110 =>
+                                           000C D646
+14 96.03125 as a 32-bit float, in hex is: 0x43B0 0800
+                                              [0100 0011 1011 0000 0000 1000 0000 00000]
+15 2e-138 as a 32-bit float, in hex is: 0x7A80 0000
+                                              [0 11110101 000 0000 0000 0000 0000 0000]
+16 Hex 43700000, when interpreted as an IEEE-754 pattern, is in decimal:   240
+                                              [0 10000110 111 0000 0000 0000 0000 0000]
+17 Hex C0FF0000, when interpreted as an IEEE-754 pattern, is in decimal:   –7.96875
+                                              [1.1111111 x 2(129 – 127) or 111.11111]
+                                              [1 10000001 111 1111 0000 0000 0000 0000]
+
+
+"A level" problems
+---------------------------------
+01 Work all "C level" and "B level" problems and also the following problems:
+02 1.5 X 2e-143 as a 32-bit float, in hex is: 0x00000060 [denormalized]
+                                             [0 00000000 000 0000 0000 0000 0110 0000] or
+                                             [0000 0000 0000 0000 0000 0000 0110 0000]
+03 -16777216 as a 32-bit float, in hex is: 0xCB80 0000
+                                             [1 11111110 000 0000 0000 0000 0000 0000] or
+                                             [1111 1111 0000 0000 0000 0000 0000 0000]
+04 The largest finite IEEE-754 single precision float, in hex is:
+                                             0x7F7F FFFF representing 3.4028234e+38
+                                             [0 11111110 111 1111 1111 1111 1111 1111] or
+                                             [0111 1111 0111 1111 1111 1111 1111 1111]
+05 The smallest finite IEEE-754 single precision float, in hex is:
+                                             0x00800000 representing 1.17549435e-38
+                                             [0 00000001 000 0000 0000 0000 0000 0000] or
+                                             [0000 0000 1000 0000 0000 0000 0000 0000]
+06 The largest non-zero negative IEEE-754 single precision float, in hex is:
+                                             0x80000001 [1000 0000 0000 0000 0000 0000 0000 0001]
+                                             Representing -1.40129846432e-45  or
+                                             -0.0000000000000000000000000000000000000000000001401…
+07 The smallest non-zero positive IEEE-754 single precision float, in hex is:
+                                             0x00000001 [0000 0000 0000 0000 0000 0000 0000 0001]
+                                             Representing -1.40129846432e-45  or
+                                             0.0000000000000000000000000000000000000000000001401…
+08 -5.125 X 2e90 as a 32-bit float, in hex is:
+                                             2^90 = 1,237,940,039,285,380,274,899,124,224
+                                             That times -5.125 is -6.344442701337573908858011648
+                                             0xC0CB05AD
+                                             [1 10000001 100 1011 0000 0101 1010 1101] or
+                                             [1100 0000 1100 1011 0000 0101 1010 1101]
+
+The following problem is optional
+-----------------------------------
+09 Hex C059 0000 0000 0000, when interpreted as an IEEE-754 pattern, is in decimal: -100
+
+
+

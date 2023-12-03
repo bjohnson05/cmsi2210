@@ -1,0 +1,47 @@
+
+
+Evaluation Criteria ~ homework02
+CMSI 2210 Section 03 Fall 2023
+=================================
+
+BOOK PROBLEMS
+   Question 01    1/1 pt.
+   Question 02    1/1 pt.
+   Question 03    1/1 pt.
+   Question 04    1/1 pt.
+   Question 05    1/1 pt.
+   Question 06    1/1 pt.
+   Question 07    1/1 pt.
+   Question 08    1/1 pt.
+   Question 09    1/1 pt.
+   Question 10    1/1 pt.
+   Question 11    1/1 pt.
+   Question 12    1/1 pt.
+   Question 13    1/1 pt.
+   Question 14    1/1 pt.
+   Question 15    1/1 pt.
+   Question 16    1/1 pt.
+   Question 17    1/1 pt.
+   Question 18    1/1 pt.
+   Question 19    1/1 pt.
+   Question 20    1/1 pt.
+
+Total possible points 20
+
+========================================================
+
+TOTAL EARNED POINTS:
+   you earned 20/20 which is 100% which is an A-plus
+
+========================================================
+SPECIFIC COMMENTS/FEEDBACK:
+
+Full credit on questions 18 and 19, since technically your answer is right.
+However, if you look carefully at the problem from the course web page for
+the assignment, you'll note that the "2" in the bit pattern is actually a
+*subscript* which indicates that the value is in base-2.  The subscript is
+not intended to be part of the number, so the "real" correct answer is
+   18.  10010111 binary = 128 + 16 + 7 = 151
+   19.  11111111 binary = 255 [one of the magic numbers I told you about]
+
+Nice job!
