@@ -1,13 +1,13 @@
 /*
- *  filename:  maxofthreetest.c
+ *  filename:  maxOfThreeTest.c
  *
- *  to compile/link: gcc maxofthreetest.c maxofthree.o -o maxofthreetest
- *  to run:  ./maxofthreetest
+ *  to compile/link: gcc maxOfThreeTest.c maxofthree.obj -o maxOfThreeTest
+ *  to run:  ./maxOfThreeTest
  */
 #include <stdio.h>
 #include <inttypes.h>
 
-int64_t maxofthree( int64_t, int64_t, int64_t );
+int32_t maxofthree( int32_t, int32_t, int32_t );
 
 int main() {
    printf( "%ld\n", maxofthree(  1, -4, -7 ) );
