@@ -4,8 +4,9 @@ Adding a directory to the Mac O/S search path
 1.  Determine the directory in which the program you are adding 'resides'
 2.  Open a terminal window and type the name of the program.  If you DON'T
       get a response saying
-         "command not found: nasm"
+         "command not found: <program-you-typed>"
       the program is already in the search path.  You're done.
+
 3.  type "cd" and press "enter".  This will return you to your "normal"
       working directory [also called your 'home' directory] in the terminal
       window.
