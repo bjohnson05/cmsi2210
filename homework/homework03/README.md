@@ -18,7 +18,7 @@ Remember that the prefix "0x" or "0X" indicates that a value is shown in hexadec
 
 ## Problems
 
-These problems are very straightforward and should not be hard ~ you'll get good practice here!
+The problems in this section are very straightforward and should not be hard ~ you'll get good practice here!
       <ol><li>Hex FAC3 in binary is:
           <li>Hex FAC3 as an unsigned decimal is:
           <li>Hex FAC3 as a signed decimal is:
@@ -43,7 +43,7 @@ These problems are very straightforward and should not be hard ~ you'll get good
           <li>The 16-bit operation 0x3511 + 0x4FFC has a overflows (Y or N):
       </ol>
 
-These problems give you more to think about with these concepts of number conversion and arithmetic.
+These problems give you more to think about with the concepts of number conversion and arithmetic.
       <ol><li>The modular sum of 16-bit hex values 6159 + F702 is:
           <li>The saturated sum of 16-bit hex values 6159 + F702 is:
           <li>The 16-bit operation 0x6159 + 0xF702 has a carry (Y or N):
@@ -62,7 +62,7 @@ These problems give you more to think about with these concepts of number conver
           <li>Hex C0FF0000, when interpreted as an IEEE-754 pattern, is in decimal:
       </ol>
 
-These problems are difficult and will require you to do some research to get the answers.  They are considered optional and you will get extra credit for getting them correct, one point per problem.  For any you attempt but for which the answer is incorrect, you will NOT be penalized, you just won't get any credit for them.
+These problems are difficult and will require you to do some research to get the answers.  <strong>They are considered optional</strong> and you will get extra credit for getting them correct, one point per problem.  For any you attempt for which the answer is <em><u>incorrect</u></em>, you will NOT be penalized, you just won't get any credit for them.
       <ol><li>The largest finite IEEE-754 single precision float, in hex is:
           <li>The smallest finite IEEE-754 single precision float, in hex is:
           <li>The largest nonzero negative IEEE-754 single precision float, in hex is:
