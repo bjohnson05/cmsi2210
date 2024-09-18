@@ -1,6 +1,6 @@
 /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *  filename: Ex3_1.c
- *  purpose:  implement inclass exercise 1, week 3 in Java
+ *  purpose:  implement inclass exercise 1, week 3 in "C" language
  *  @author:  Dr. Johnson
  *  @date:    2020-12-31
  *  Note:     see https://bjohnson.lmu.build/cmsi284web/week03.html
