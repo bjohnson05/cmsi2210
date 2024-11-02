@@ -17,14 +17,14 @@ echo .                              >> testresults.txt
 echo "running tests on dec2hex"     >> testresults.txt
 dec2hex                             >> testresults.txt
 dec2hex 5                           >> testresults.txt
-dec2hex 123456 8                    >> testresults.txt
+dec2hex 123456 32                   >> testresults.txt
 dec2hex 65535                       >> testresults.txt
-dec2hex 977272832 8                 >> testresults.txt
+dec2hex 977272832 32                >> testresults.txt
 dec2hex 1073746484                  >> testresults.txt
-dec2hex 5 16                        >> testresults.txt
-dec2hex 123456 16                   >> testresults.txt
-dec2hex 65535 15                    >> testresults.txt
-dec2hex 977272832 16                >> testresults.txt
+dec2hex 5 64                        >> testresults.txt
+dec2hex 123456 64                   >> testresults.txt
+dec2hex 65535 63                    >> testresults.txt
+dec2hex 977272832 64                >> testresults.txt
 dec2hex 1073746484                  >> testresults.txt
 echo .                              >> testresults.txt
 echo "running tests on timesTables" >> testresults.txt
