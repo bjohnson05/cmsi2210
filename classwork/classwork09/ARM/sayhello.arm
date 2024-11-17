@@ -1,3 +1,13 @@
+//
+// filename: sayhello.arm
+// purpose: beginning hello world program
+// author: Dr. Johnson
+// date: 2024-10-20
+//
+// assemble: as -o sayhello.o sayhello.arm
+// link: ld -o sayhello sayhello.o -lc -lSystem
+//    [note: may be some different options required for linking
+//
 
          .global _main
          .align  2
