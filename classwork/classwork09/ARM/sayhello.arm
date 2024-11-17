@@ -1,0 +1,17 @@
+
+         .global _main
+         .align  2
+
+_main:
+         adrp  x0,   message@PAGE
+         add   x0,   x0,   message@PAGEOFF
+         bl    _printf
+
+_exit:
+         mov   x0,   #0
+         mov   x16,  #1
+         svc   0
+
+.data
+.balign  4
+message: .ascii   "\n\n   Hello, world!\n\n"

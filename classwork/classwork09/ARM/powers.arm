@@ -1,0 +1,39 @@
+//
+// filename: powers.arm
+// purpose: print powers of two up to 1000000
+// author: Dr. Johnson
+// date: 2024-10-20
+//
+// assemble: as -o powerso powers_of_two.arm
+// link: ld -o powers powers.o -lc -lSystem
+//    [note: may be some different options required for linking
+//
+
+.section .data
+format_string: .asciz "%d\n"  // Format string for printf
+
+.section .text
+.global _start
+
+_start:
+    // Initialize values
+    mov x1, 1                  // x1 = 1 (2^0)
+    ldr x0, =format_string     // Load address of format string into x0
+
+print_loop:
+    // Print the current value
+    bl printf                  // Call printf
+
+    // Multiply by 2 to get the next power of two
+    lsl x1, x1, #1             // x1 = x1 << 1 (x1 *= 2)
+
+    // Check if we've exceeded 1,000,000
+    cmp x1, 1000000            // Compare x1 with 1,000,000
+    ble print_loop             // If x1 <= 1,000,000, repeat the loop
+
+    // Exit the program
+    mov x8, 93                 // syscall: exit
+    mov x0, 0                  // exit code 0
+    svc #0                     // Make the system call
+
+.section .note.GNU-stack
